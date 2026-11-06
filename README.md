@@ -11,6 +11,14 @@ curl -fsSL https://raw.githubusercontent.com/Ryan-Dia/macos-korean-ime-instant/m
 - 여러 번 실행해도 안전합니다. 이미 적용된 항목은 건너뜁니다.
 - 바꾸기 전 원래 값을 기록해 두므로 `--uninstall`로 그대로 되돌릴 수 있습니다.
 
+## Claude Code에게 맡기기
+
+새 맥에서 이 저장소 주소만 주면 Claude Code가 [`CLAUDE.md`](CLAUDE.md)의 절차대로 설치·점검·문제 진단까지 진행합니다.
+
+```
+https://github.com/Ryan-Dia/macos-korean-ime-instant 이거 보고 내 맥에 한영 전환 딜레이 없애줘
+```
+
 ## 무엇을 바꾸나
 
 | # | 설정 | 효과 |
@@ -117,10 +125,6 @@ Karabiner → Complex Modifications → Add predefined rule에서 켜세요.
 
 `--uninstall`은 기록해 둔 원래 값으로 되돌리고 Karabiner 규칙을 지운 뒤, 제거했던 기존 Caps Lock 매핑을 복원합니다.
 수정 전 `karabiner.json`은 매번 `backups/`에 복사됩니다.
-
-## 테스트
-
-GitHub Actions의 macOS 14 / 15 / 26 가상머신에서 매 커밋마다 `dry-run → 설치 → 재설치 → 제거`를 실제로 돌려 원상복구까지 확인합니다([`tests/ci.sh`](tests/ci.sh)).
 
 ## 출처
 

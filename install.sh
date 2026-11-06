@@ -21,7 +21,7 @@ ACTIVATE_SETTINGS=/System/Library/PrivateFrameworks/SystemAdministration.framewo
 PB=/usr/libexec/PlistBuddy
 KARABINER_APP="${HANGUL_FIX_KARABINER_APP:-/Applications/Karabiner-Elements.app}"
 
-# 테스트용으로 경로를 바꿀 수 있음 (CI에서 사용)
+# 테스트용으로 경로를 바꿀 수 있음 (실제 설정을 건드리지 않고 Karabiner 로직만 시험할 때)
 KARABINER_JSON="${HANGUL_FIX_KARABINER_JSON:-$HOME/.config/karabiner/karabiner.json}"
 STATE_DIR="${HANGUL_FIX_STATE_DIR:-$HOME/Library/Application Support/macos-korean-ime-instant}"
 ONLY_KARABINER="${HANGUL_FIX_ONLY_KARABINER:-0}"
