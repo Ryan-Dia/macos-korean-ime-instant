@@ -1,0 +1,15 @@
+{
+    "title": "한영 전환 즉시 (Caps Lock → F19 탭)",
+    "rules": [
+        {
+            "description": "Caps Lock: 누르는 순간 F19 탭 (한영 전환 즉시)",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": { "key_code": "caps_lock", "modifiers": { "optional": ["any"] } },
+                    "to": [{ "key_code": "f19" }, { "key_code": "vk_none" }]
+                }
+            ]
+        }
+    ]
+}
